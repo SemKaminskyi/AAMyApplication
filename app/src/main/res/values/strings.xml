@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AAMyApplication</string>
+    <string name="main_tv_movie_list_name">Movie list</string>
 </resources>
