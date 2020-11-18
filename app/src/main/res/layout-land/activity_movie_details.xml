@@ -25,7 +25,7 @@
             <ImageView
                 android:id="@+id/iv_md_image"
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="@dimen/md_video_height"
                 android:scaleType="fitXY"
                 android:src="@drawable/details_avengers_end_game"
                 app:layout_constraintStart_toStartOf="parent"

@@ -20,7 +20,7 @@
     <ImageView
         android:id="@+id/iv_md_image_mask"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="@dimen/md_video_height"
         android:scaleType="fitXY"
         android:src="@drawable/gradient"
         app:layout_constraintStart_toStartOf="parent"

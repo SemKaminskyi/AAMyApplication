@@ -12,4 +12,5 @@
     <dimen name="md_margin_top_members_name">6dp</dimen>
     <dimen name="md_margin_inside_icon_members">8dp</dimen>
     <dimen name="md_size_icon_members_land">152dp</dimen>
+    <dimen name="md_video_height">300dp</dimen>
 </resources>
