@@ -2,4 +2,14 @@
 <resources>
     <dimen name="main_tv_movie_list">40dp</dimen>
     <dimen name="main_tv_movie_list_text_size">14sp</dimen>
+    <dimen name="md_textSize14">14sp</dimen>
+    <dimen name="md_size_star">12dp</dimen>
+    <dimen name="md_margin_top_bottom_star">4dp</dimen>
+    <dimen name="md_margin_start_back">24dp</dimen>
+    <dimen name="md_start_end_tv">16dp</dimen>
+    <dimen name="md_size_icon_members">80dp</dimen>
+    <dimen name="md_margin_top_icon_member">7dp</dimen>
+    <dimen name="md_margin_top_members_name">6dp</dimen>
+    <dimen name="md_margin_inside_icon_members">8dp</dimen>
+    <dimen name="md_size_icon_members_land">152dp</dimen>
 </resources>

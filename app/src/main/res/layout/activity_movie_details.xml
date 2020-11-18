@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_all_main"
+    tools:context=".MovieDetails">
+
+
+    <ImageView
+        android:id="@+id/iv_md_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/details_avengers_end_game"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_md_image_mask"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/gradient"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/iv_md_path_arrow_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/md_margin_start_back"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/ic_path_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_md_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Back"
+        android:textColor="@color/grey_light"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_md_path_arrow_back"
+        app:layout_constraintStart_toEndOf="@+id/iv_md_path_arrow_back"
+        app:layout_constraintTop_toTopOf="@+id/iv_md_path_arrow_back" />
+
+    <TextView
+        android:id="@+id/tv_md_age"
+        android:layout_width="24dp"
+        android:layout_height="@dimen/md_start_end_tv"
+        android:layout_marginStart="@dimen/md_start_end_tv"
+        android:layout_marginTop="226dp"
+        android:text="13+"
+        android:textColor="@color/white_clean"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_md_name_movie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/md_start_end_tv"
+        android:layout_marginTop="254dp"
+        android:layout_marginEnd="@dimen/md_start_end_tv"
+        android:text="Avengers: \nEnd Game"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_md_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/md_start_end_tv"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="@dimen/md_start_end_tv"
+        android:text="Action, Adventure, Fantasy"
+        android:textColor="@color/raspberry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_md_name_movie" />
+
+    <LinearLayout
+        android:id="@+id/container_md_rate_reviews"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="@dimen/md_start_end_tv"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_md_category">
+
+        <ImageView
+            android:id="@+id/iv_md_1_star"
+            android:layout_width="@dimen/md_size_star"
+            android:layout_height="@dimen/md_size_star"
+            android:layout_marginTop="@dimen/md_margin_top_bottom_star"
+            android:layout_marginBottom="@dimen/md_margin_top_bottom_star"
+            android:src="@drawable/ic_star_icon_full"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_md_2_star"
+            android:layout_width="@dimen/md_size_star"
+            android:layout_height="@dimen/md_size_star"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="@dimen/md_margin_top_bottom_star"
+            android:layout_marginBottom="@dimen/md_margin_top_bottom_star"
+            android:src="@drawable/ic_star_icon_full"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_md_3_star"
+            android:layout_width="@dimen/md_size_star"
+            android:layout_height="@dimen/md_size_star"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="@dimen/md_margin_top_bottom_star"
+            android:layout_marginBottom="@dimen/md_margin_top_bottom_star"
+            android:src="@drawable/ic_star_icon_full"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_md_4_star"
+            android:layout_width="@dimen/md_size_star"
+            android:layout_height="@dimen/md_size_star"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="@dimen/md_margin_top_bottom_star"
+            android:layout_marginBottom="@dimen/md_margin_top_bottom_star"
+            android:src="@drawable/ic_star_icon_full"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_md_5_star"
+            android:layout_width="@dimen/md_size_star"
+            android:layout_height="@dimen/md_size_star"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="@dimen/md_margin_top_bottom_star"
+            android:layout_marginBottom="@dimen/md_margin_top_bottom_star"
+            android:src="@drawable/ic_star_icon_empty"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_md_reviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="125 REVIEWS"
+            android:textColor="@color/grey_light"
+            android:textSize="@dimen/md_textSize14" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_md_title_storyline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/md_start_end_tv"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="@dimen/md_start_end_tv"
+        android:text="Storyline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container_md_rate_reviews" />
+
+    <TextView
+        android:id="@+id/tv_md_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/md_start_end_tv"
+        android:layout_marginEnd="@dimen/md_start_end_tv"
+        android:text="After the devastating events of Avengers: Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe."
+        android:textColor="@color/white_clean"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_md_title_storyline" />
+
+    <TextView
+        android:id="@+id/tv_md_cast"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Cast"
+        android:layout_marginStart="@dimen/md_start_end_tv"
+        android:layout_marginEnd="@dimen/md_start_end_tv"
+        app:layout_constraintTop_toBottomOf="@+id/tv_md_description" />
+
+    <ImageView
+        android:id="@+id/iv_md_1_member"
+        android:layout_width="@dimen/md_size_icon_members"
+        android:layout_height="@dimen/md_size_icon_members"
+        android:layout_marginTop="@dimen/md_margin_top_icon_member"
+        app:layout_constraintEnd_toStartOf="@+id/iv_md_2_member"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/member1"
+
+        app:layout_constraintTop_toBottomOf="@+id/tv_md_cast" />
+
+    <TextView
+        android:id="@+id/tv_md_1_member_name"
+        android:layout_width="@dimen/md_size_icon_members"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/md_margin_top_members_name"
+        android:textColor="@color/grey_light"
+        android:textSize="12sp"
+        android:text="Robert Downey Jr."
+        app:layout_constraintEnd_toEndOf="@+id/iv_md_1_member"
+        app:layout_constraintStart_toStartOf="@+id/iv_md_1_member"
+        app:layout_constraintTop_toBottomOf="@+id/iv_md_1_member" />
+
+    <ImageView
+        android:id="@+id/iv_md_2_member"
+        android:layout_width="@dimen/md_size_icon_members"
+        android:layout_height="@dimen/md_size_icon_members"
+        android:layout_marginStart="@dimen/md_margin_inside_icon_members"
+        android:layout_marginTop="@dimen/md_margin_top_icon_member"
+        app:layout_constraintEnd_toStartOf="@+id/iv_md_3_member"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/iv_md_1_member"
+        android:src="@drawable/member2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_md_cast" />
+
+    <TextView
+        android:id="@+id/tv_md_2_member_name"
+        android:layout_width="@dimen/md_size_icon_members"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/grey_light"
+        android:textSize="12sp"
+        android:text="Chris Evans"
+        app:layout_constraintEnd_toEndOf="@+id/iv_md_2_member"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/iv_md_2_member"
+        app:layout_constraintTop_toBottomOf="@+id/iv_md_2_member" />
+
+    <ImageView
+        android:id="@+id/iv_md_3_member"
+        android:layout_width="@dimen/md_size_icon_members"
+        android:layout_height="@dimen/md_size_icon_members"
+        android:layout_marginStart="@dimen/md_margin_inside_icon_members"
+        android:layout_marginTop="@dimen/md_margin_top_icon_member"
+        app:layout_constraintEnd_toStartOf="@+id/iv_md_4_member"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/iv_md_2_member"
+        android:src="@drawable/member3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_md_cast" />
+
+    <TextView
+        android:id="@+id/tv_md_3_member_name"
+        android:layout_width="@dimen/md_size_icon_members"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/md_margin_top_members_name"
+        android:textColor="@color/grey_light"
+        android:textSize="12sp"
+        android:text="Mark Ruffalo"
+        app:layout_constraintEnd_toEndOf="@+id/iv_md_3_member"
+        app:layout_constraintStart_toStartOf="@+id/iv_md_3_member"
+        app:layout_constraintTop_toBottomOf="@+id/iv_md_3_member" />
+
+    <ImageView
+        android:id="@+id/iv_md_4_member"
+        android:layout_width="@dimen/md_size_icon_members"
+        android:layout_height="@dimen/md_size_icon_members"
+        android:layout_marginStart="@dimen/md_margin_inside_icon_members"
+        android:layout_marginTop="@dimen/md_margin_top_icon_member"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:src="@drawable/member4"
+        app:layout_constraintStart_toEndOf="@+id/iv_md_3_member"
+        app:layout_constraintTop_toBottomOf="@+id/tv_md_cast" />
+
+    <TextView
+        android:id="@+id/tv_md_4_member_name"
+        android:layout_width="@dimen/md_size_icon_members"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/md_margin_top_members_name"
+        android:textColor="@color/grey_light"
+        android:textSize="12sp"
+        android:text="Chris Hemsworth"
+        app:layout_constraintEnd_toEndOf="@+id/iv_md_4_member"
+        app:layout_constraintStart_toStartOf="@+id/iv_md_4_member"
+        app:layout_constraintTop_toBottomOf="@+id/iv_md_4_member" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
