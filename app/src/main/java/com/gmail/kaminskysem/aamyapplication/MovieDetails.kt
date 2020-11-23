@@ -6,6 +6,7 @@ import android.graphics.LinearGradient
 import android.graphics.Shader
 import android.graphics.Shader.TileMode
 import android.os.Bundle
+import android.util.Log
 import android.view.Window
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -13,8 +14,11 @@ import androidx.appcompat.app.AppCompatActivity
 
 class MovieDetails : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_movie_details)
+
+        Log.d("DetailsActivity.class" , "onCreate" )
         val tvTitle = findViewById<TextView>(R.id.tv_md_name_movie)
         val tvStoryLine = findViewById<TextView>(R.id.tv_md_title_storyline)
         val tvCast = findViewById<TextView>(R.id.tv_md_cast)
