@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">AAMyApplication</string>
-    <string name="main_tv_movie_list_name">Movie list</string>
+    <string name="list_tv_movies_list_name_all">Movie list</string>
+    <string name="list_tv_movie_name">Avengers: End Game</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="tag">Action, Adventure, Fantasy</string>
 </resources>

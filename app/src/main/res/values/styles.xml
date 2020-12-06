@@ -1,0 +1,18 @@
+<resources>
+
+    <style name="Widget.Theme.AppCompat.NoActionBar.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+    <style name="movie_name_tv">
+        <item name="android:fontFamily">@font/roboto_black</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textColor">@color/grey_light_text</item>
+    </style>
+    <style name="min">
+        <item name="android:fontFamily">@font/roboto_black</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textColor">@color/grey_dark_text</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

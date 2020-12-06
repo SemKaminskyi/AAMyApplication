@@ -13,4 +13,13 @@
     <dimen name="md_margin_inside_icon_members">8dp</dimen>
     <dimen name="md_size_icon_members_land">152dp</dimen>
     <dimen name="md_video_height">300dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="main_list_age">24dp</dimen>
+    <dimen name="corners_radius_rectangle">5dp</dimen>
+    <dimen name="corners_radius_rectangle_list_item">8dp</dimen>
+    <dimen name="list_star_inside_margin">2dp</dimen>
+    <dimen name="list_tv_rate_reviews_text_size">8sp</dimen>
+    <dimen name="list_star_margin_top">2dp</dimen>
+    <dimen name="list_start_end_tv">8dp</dimen>
+    <dimen name="list_size_star">8dp</dimen>
 </resources>

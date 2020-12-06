@@ -66,7 +66,7 @@
         android:layout_marginStart="@dimen/md_start_end_tv"
         android:layout_marginTop="254dp"
         android:layout_marginEnd="@dimen/md_start_end_tv"
-        android:text="Avengers: \nEnd Game"
+        android:text="@string/list_tv_movie_name"
         android:textSize="40sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
